@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: sharding-jdbc-demo
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://insnp.qa.tcskdb.local:3306/tcbiz_ins?characterEncoding=utf8&useAffectedRows=true&useSSL=false&serverTimezone=Asia/Shanghai
+    username: jfqadml
+    password: Jqv@cl9EML2WDBCk
+  shardingsphere:
+    datasource:
+      names: ds0
+    sharding:
+      tables:
+        CashRepayApplySplit:
+          actual-data-nodes: tcbiz_ins.CashRepayApplySplit_0$->{0..9},tcbiz_ins.CashRepayApplySplit_$->{10..49}
+          table-strategy:
+            inline:
+              sharding-column: memberId
+              algorithm-expression: memberId % 50
+  profiles:
+    active: default
