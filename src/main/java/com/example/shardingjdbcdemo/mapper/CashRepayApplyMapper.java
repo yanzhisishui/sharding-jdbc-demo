@@ -11,6 +11,6 @@ import java.util.List;
 @Mapper
 public interface CashRepayApplyMapper extends BaseMapper<CashRepayApply> {
 
-    @Select("select * from cash_repay_apply where memberId = #{memberId}")
+    @Select("select * from cash_repay_apply where member_id = #{memberId}")
     List<CashRepayApply> testSharding(@Param("memberId") String memberId);
 }
