@@ -11,7 +11,7 @@ import lombok.Data;
 public class CashRepayApply {
     @TableId(type = IdType.AUTO )
     private Integer id;
-    private Integer memberId;
+    private String memberId;
     private String repayNo;
 
 }

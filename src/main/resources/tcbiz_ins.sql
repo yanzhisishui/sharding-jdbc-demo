@@ -23,7 +23,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS `cash_repay_apply`;
 CREATE TABLE `cash_repay_apply` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int NOT NULL,
+  `member_id` varchar(50) NOT NULL,
   `repay_no` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -40,7 +40,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_00`;
 CREATE TABLE `cash_repay_apply_00` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int NOT NULL,
+  `member_id` varchar(50) NOT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -57,7 +57,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_01`;
 CREATE TABLE `cash_repay_apply_01` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int NOT NULL,
+  `member_id` varchar(50) NOT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -74,7 +74,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_02`;
 CREATE TABLE `cash_repay_apply_02` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int NOT NULL,
+  `member_id` varchar(50) NOT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -91,7 +91,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_03`;
 CREATE TABLE `cash_repay_apply_03` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int NOT NULL,
+  `member_id` varchar(50) NOT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -108,7 +108,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_04`;
 CREATE TABLE `cash_repay_apply_04` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int NOT NULL,
+  `member_id` varchar(50) NOT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -125,7 +125,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_05`;
 CREATE TABLE `cash_repay_apply_05` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int NOT NULL,
+  `member_id` varchar(50) NOT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -142,7 +142,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_06`;
 CREATE TABLE `cash_repay_apply_06` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -159,7 +159,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_07`;
 CREATE TABLE `cash_repay_apply_07` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -193,7 +193,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_09`;
 CREATE TABLE `cash_repay_apply_09` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -210,7 +210,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_10`;
 CREATE TABLE `cash_repay_apply_10` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -227,7 +227,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_11`;
 CREATE TABLE `cash_repay_apply_11` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -244,7 +244,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_12`;
 CREATE TABLE `cash_repay_apply_12` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -261,7 +261,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_13`;
 CREATE TABLE `cash_repay_apply_13` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -278,7 +278,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_14`;
 CREATE TABLE `cash_repay_apply_14` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -295,7 +295,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_15`;
 CREATE TABLE `cash_repay_apply_15` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -312,7 +312,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_16`;
 CREATE TABLE `cash_repay_apply_16` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -329,7 +329,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_17`;
 CREATE TABLE `cash_repay_apply_17` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -346,7 +346,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_18`;
 CREATE TABLE `cash_repay_apply_18` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -363,7 +363,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_19`;
 CREATE TABLE `cash_repay_apply_19` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -380,7 +380,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_20`;
 CREATE TABLE `cash_repay_apply_20` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -397,7 +397,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_21`;
 CREATE TABLE `cash_repay_apply_21` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -414,7 +414,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_22`;
 CREATE TABLE `cash_repay_apply_22` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -432,7 +432,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_23`;
 CREATE TABLE `cash_repay_apply_23` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -449,7 +449,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_24`;
 CREATE TABLE `cash_repay_apply_24` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -466,7 +466,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_25`;
 CREATE TABLE `cash_repay_apply_25` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -483,7 +483,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_26`;
 CREATE TABLE `cash_repay_apply_26` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -500,7 +500,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_27`;
 CREATE TABLE `cash_repay_apply_27` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -517,7 +517,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_28`;
 CREATE TABLE `cash_repay_apply_28` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -534,7 +534,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_29`;
 CREATE TABLE `cash_repay_apply_29` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -551,7 +551,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_30`;
 CREATE TABLE `cash_repay_apply_30` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -568,7 +568,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_31`;
 CREATE TABLE `cash_repay_apply_31` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -585,7 +585,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_32`;
 CREATE TABLE `cash_repay_apply_32` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -602,7 +602,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_33`;
 CREATE TABLE `cash_repay_apply_33` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -619,7 +619,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_34`;
 CREATE TABLE `cash_repay_apply_34` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -636,7 +636,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_35`;
 CREATE TABLE `cash_repay_apply_35` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -653,7 +653,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_36`;
 CREATE TABLE `cash_repay_apply_36` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -670,7 +670,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_37`;
 CREATE TABLE `cash_repay_apply_37` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -687,7 +687,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_38`;
 CREATE TABLE `cash_repay_apply_38` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -704,7 +704,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_39`;
 CREATE TABLE `cash_repay_apply_39` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -721,7 +721,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_40`;
 CREATE TABLE `cash_repay_apply_40` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -738,7 +738,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_41`;
 CREATE TABLE `cash_repay_apply_41` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -755,7 +755,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_42`;
 CREATE TABLE `cash_repay_apply_42` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -772,7 +772,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_43`;
 CREATE TABLE `cash_repay_apply_43` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -789,7 +789,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_44`;
 CREATE TABLE `cash_repay_apply_44` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -806,7 +806,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_45`;
 CREATE TABLE `cash_repay_apply_45` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -823,7 +823,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_46`;
 CREATE TABLE `cash_repay_apply_46` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -840,7 +840,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_47`;
 CREATE TABLE `cash_repay_apply_47` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -857,7 +857,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_48`;
 CREATE TABLE `cash_repay_apply_48` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
@@ -874,7 +874,7 @@ COMMIT;
 DROP TABLE IF EXISTS `cash_repay_apply_49`;
 CREATE TABLE `cash_repay_apply_49` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `member_id` int DEFAULT NULL,
+  `member_id` varchar(50) DEFAULT NULL,
   `repay_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
