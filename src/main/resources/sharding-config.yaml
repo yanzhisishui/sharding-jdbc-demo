@@ -24,7 +24,7 @@ rules:
         type: INLINE
         props:
           #分片表达式，groovy 脚本
-          algorithm-expression: cash_repay_apply_$->{Long.parseLong(member_id) % 50}
+          algorithm-expression: cash_repay_apply_$->{String.valueOf(Long.parseLong(String.valueOf(member_id).substring(String.valueOf(member_id).size() - 2)) % 50 ).padLeft(2,'0')}
 
 props:
   sql-show: true
